@@ -1,4 +1,22 @@
 def estadisticas(data):
+    """
+    Calcula estadísticas a partir de una lista de compras.
+
+    Args:
+        data (list[dict]): Lista de diccionarios con la información de cada compra.
+            Cada diccionario debe tener las claves:
+                - "cliente" (str) 
+                - "producto" (str)
+                - "cantidad" (int)
+                - "precio_unitario" (int)
+
+    Returns:
+        dict: Un diccionario con el resumen de estadísticas:
+            - "total_ingresos" (int): Suma de cantidad * precio_unitario para todas las compras.
+            - "top_producto_por_ingresos" (str): Producto con mayor ingreso acumulado.
+            - "compras_por_cliente" (dict[str, int]): Cantidad total de ítems comprados por cliente.
+            - "bono" (bool): True si total_ingresos > 6_000_000, de lo contrario False.
+    """
     total_ingresos = 0
     ingresos_por_producto = {}
     compras_por_cliente = {}
