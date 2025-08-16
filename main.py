@@ -1,6 +1,6 @@
 from utils import estadisticas
 
-DatosPrueba = [{'cliente': 'A',
+datos_prueba = [{'cliente': 'A',
                 'fecha': '2025-07-01',
                 'producto': 'laptop',
                 'cantidad': 1,
@@ -33,7 +33,7 @@ DatosPrueba = [{'cliente': 'A',
 
 def main():
     print("Bienvenido al sistema de compras")
-    print(f"estadisticas: {estadisticas(DatosPrueba)}") 
+    print(f"estadisticas: {estadisticas(datos_prueba)}") 
 
 if __name__ == "__main__":
     main()
